@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p>Choose your move and challenge the computer!</p>
+        </header>
+
+        <!-- Score Board -->
+        <div class="score-board">
+            <div class="score">
+                <h3>Player</h3>
+                <span id="player-score">0</span>
+            </div>
+
+            <div class="score">
+                <h3>Computer</h3>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <!-- Turn Indicator -->
+        <div class="turn">
+            <p id="turn-message">Your turn! Choose your move.</p>
+        </div>
+
+        <!-- Game Choices -->
+        <div class="choices">
+
+            <button class="choice" data-choice="rock">
+                ✊
+                <span>Rock</span>
+            </button>
+
+            <button class="choice" data-choice="paper">
+                ✋
+                <span>Paper</span>
+            </button>
+
+            <button class="choice" data-choice="scissors">
+                ✌️
+                <span>Scissors</span>
+            </button>
+
+        </div>
+
+        <!-- Results -->
+        <div class="result">
+            <h2 id="result-message">Let's Play!</h2>
+            <p id="moves">You: - | Computer: -</p>
+        </div>
+
+        <!-- Restart Button -->
+        <button id="restart-button">Restart Game</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
